@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>コーヒー探求会（仮） | コーヒーを実験として楽しむオンラインコミュニティ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="コーヒー探求会（仮）は、コーヒーを実験として楽しむ人たちのためのDiscordコミュニティです。今日の一杯から焙煎まで、オンラインで一緒に探求しませんか？" />
+
+  <!-- LINE Seed JP フォント -->
+  <link href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #121212;
+      --bg-section: #1d1a17;
+      --accent: #c47a3a;
+      --accent-light: #e3b873;
+      --text-main: #ffffff;
+      --text-sub: #d0d0d0;
+      --max-width: 720px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-main);
+      color: var(--text-main);
+      font-family: "LINE Seed JP", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 16px 16px 40px;
+    }
+
+    section {
+      margin-bottom: 32px;
+      padding: 20px 16px;
+      background: var(--bg-section);
+      border-radius: 16px;
+    }
+
+    .section--no-bg {
+      background: transparent;
+      padding: 0;
+    }
+
+    .section__title {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: var(--accent-light);
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 16px;
+    }
+
+    .hero__title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .hero__copy {
+      font-size: 0.95rem;
+      color: var(--text-sub);
+      margin-bottom: 16px;
+    }
+
+    .hero__desc {
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    }
+
+    .btn-primary:active {
+      transform: translateY(1px);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-size: 0.95rem;
+    }
+
+    .feature {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .feature__icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: rgba(196, 122, 58, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    .cta {
+      text-align: center;
+    }
+
+    .philosophy p {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .philosophy ul {
+      list-style: none;
+      margin: 8px 0;
+      padding-left: 0;
+    }
+
+    .philosophy li {
+      margin-bottom: 4px;
+    }
+
+    .philosophy li::before {
+      content: "・";
+      margin-right: 4px;
+      color: var(--accent-light);
+    }
+
+    .footer-note {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      text-align: center;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- ヒーロー -->
+    <section class="hero section--no-bg">
+      <h1 class="hero__title">コーヒー探求会（仮）</h1>
+      <p class="hero__copy">コーヒーは、正解を探す旅ではなく、実験を楽しむ遊び場だ。</p>
+      <p class="hero__desc">
+        コーヒーを“探求”として楽しむ人が集まるオンラインコミュニティ。<br>
+        今日の一杯から焙煎まで、一緒に実験しませんか？
+      </p>
+      <p>
+        <a href="https://discord.gg/c63mcVCbvn" class="btn-primary" target="_blank" rel="noopener noreferrer">
+          Discord に参加する（無料）
+        </a>
+      </p>
+    </section>
+
+    <!-- イベント告知 -->
+    <section>
+      <h2 class="section__title">🎉 年末オンラインイベント</h2>
+      <p><strong>12月28日（日）13:30〜</strong></p>
+      <p><strong>テーマ：「今年の推し豆を語る会」</strong></p>
+      <p>2024年に出会った“最高の一杯”を語り合うオンラインイベントです。</p>
+      <p>初心者も大歓迎。聞くだけ参加もOK。</p>
+    </section>
+
+    <!-- 特徴 -->
+    <section>
+      <h2 class="section__title">🔍 コミュニティの特徴</h2>
+
+      <div class="features">
+
+        <div class="feature">
+          <div class="feature__icon">板</div>
+          <div>
+            <strong>掲示板形式で見やすい</strong>
+            <p>テーマごとに整理され、過去ログも探しやすい。</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon">記</div>
+          <div>
+            <strong>情報が蓄積される</strong>
+            <p>抽出ログや豆比較などが“研究ノート”のように残る。</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon">安</div>
+          <div>
+            <strong>承認制で安心</strong>
+            <p>落ち着いた雰囲気で初心者も参加しやすい。</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon">声</div>
+          <div>
+            <strong>ボイスチャットで語れる</strong>
+            <p>世界のどこからでもオンライン実験会ができる。</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h2 class="section__title">🚪 参加はこちら</h2>
+      <p>見るだけ参加もOK。気軽にどうぞ。</p>
+      <p>
+        <a href="https://discord.gg/c63mcVCbvn" class="btn-primary" target="_blank" rel="noopener noreferrer">
+          Discord に参加する（無料）
+        </a>
+      </p>
+    </section>
+
+    <!-- 理念 -->
+    <section class="philosophy">
+      <h2 class="section__title">🌱 コミュニティの理念</h2>
+
+      <p><strong>コーヒーは、正解を探す旅ではなく、実験を楽しむ遊び場だ。</strong></p>
+
+      <p>このコミュニティは、コーヒーを“実験”として楽しむ人たちが集まるオンラインラボです。</p>
+
+      <p>初心者は気軽に質問でき、経験者は知見を共有し、それぞれが自分のペースで探求できます。</p>
+
+      <p>抽出ログ、豆比較、器具検証、焙煎記録などが蓄積され、研究ノートのように残ります。</p>
+
+      <p>承認制で安心して参加でき、ボイスチャットでオンライン実験会も開けます。</p>
+
+      <p>大切にしていること：</p>
+      <ul>
+        <li>試すことを楽しむ</li>
+        <li>互いの実験を尊重する</li>
+        <li>失敗も含めて共有する</li>
+      </ul>
+
+      <p>一緒に、日々の一杯をもっと面白くしていきましょう。</p>
+    </section>
+
+    <p class="footer-note">※このページはコーヒー探求会（仮）の案内用LPです。</p>
+
+  </div>
+</body>
+</html>
