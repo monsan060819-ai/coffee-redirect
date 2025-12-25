@@ -6,6 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="コーヒー探求会（仮）は、コーヒーを実験として楽しむ人たちのためのDiscordコミュニティです。今日の一杯から焙煎まで、オンラインで一緒に探求しませんか？" />
 
+  <!-- ▼ GA4ここに追加 ▼ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RYYTZEQ26"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4RYYTZEQ26');
+  </script>
+  <!-- ▲ GA4ここに追加 ▲ -->
+
+  <!-- ▼ UTM解析スクリプト ▼ -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const source = params.get("utm_source");
+    if (source) {
+      console.log("SNS流入元:", source);
+    }
+  </script>
+</head>
+
   <!-- LINE Seed JP フォント -->
   <link href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 
