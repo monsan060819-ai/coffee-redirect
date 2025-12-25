@@ -62,21 +62,52 @@
       color: var(--accent-light);
     }
 
+    /* ▼▼▼ ヒーロー部分の背景画像 ▼▼▼ */
     .hero {
       text-align: center;
-      padding-top: 16px;
+      padding: 40px 16px;
+      border-radius: 16px;
+      background-image: url('imageshero-bg.jpg'); /* ← 修正済み */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    /* 背景を暗くして文字を読みやすくする半透明レイヤー */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.45);
+      border-radius: 16px;
+      z-index: 0;
+    }
+
+    /* ▼▼▼ 縁取り文字 ▼▼▼ */
+    .outline-text {
+      position: relative;
+      z-index: 1;
+      color: #ffffff;
+      text-shadow:
+        2px 2px 4px rgba(0,0,0,0.8),
+        -2px 2px 4px rgba(0,0,0,0.8),
+        2px -2px 4px rgba(0,0,0,0.8),
+        -2px -2px 4px rgba(0,0,0,0.8);
     }
 
     .hero__title {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 700;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
     .hero__copy {
-      font-size: 0.95rem;
-      color: var(--text-sub);
-      margin-bottom: 16px;
+      font-size: 1rem;
+      margin-bottom: 14px;
     }
 
     .hero__desc {
@@ -94,6 +125,8 @@
       font-size: 1rem;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+      position: relative;
+      z-index: 1;
     }
 
     .btn-primary:active {
@@ -162,11 +195,11 @@
 <body>
   <div class="page">
 
-    <!-- ヒーロー -->
+    <!-- ▼▼▼ ヒーロー部分 ▼▼▼ -->
     <section class="hero section--no-bg">
-      <h1 class="hero__title">コーヒー探求会（仮）</h1>
-      <p class="hero__copy">コーヒーは、正解を探す旅ではなく、実験を楽しむ遊び場だ。</p>
-      <p class="hero__desc">
+      <h1 class="hero__title outline-text">コーヒー探求会（仮）</h1>
+      <p class="hero__copy outline-text">コーヒーは、正解を探す旅ではなく、実験を楽しむ遊び場だ。</p>
+      <p class="hero__desc outline-text">
         コーヒーを“探求”として楽しむ人が集まるオンラインコミュニティ。<br>
         今日の一杯から焙煎まで、一緒に実験しませんか？
       </p>
